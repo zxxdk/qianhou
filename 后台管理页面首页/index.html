@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/index.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>后台管理系统页面</title>
+<script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(function () { $('#collapseFour').collapse('hide')});
+    $(function () { $('#collapseTwo').collapse('hide')});
+    $(function () { $('#collapseThree').collapse('hide')});
+    $(function () { $('#collapseOne').collapse('hide')});
+    $(function () { $('#collapseFive').collapse('hide')});
+    $(function () { $('#collapseSix').collapse('hide')});
+   
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+	<div class="row">
+	    <div class="col-xs-9">
+		    <div class="logo">
+			    <img src="./img/admin_logo.png" title="在哪儿">
+		    </div>
+		    <div class="title">
+			    <h3>MOOC网站后台管理系统</h3>
+		    </div>
+		    <div class="fr top-link">
+			    <a href="http://demo.mycodes.net/houtai/MOOC/admin_list.html" target="mainCont" title="DeathGhost">
+				   <i class="adminIcon"></i>
+				   <span>管理员：DeathGhost</span>
+			    </a>
+		    </div>
+	    </div>
+	</div>
+
+	<div class="row">
+	<div class="col-xs-6 col-sm-3">
+	   
+	    <div class="div1">
+		    <div class="left_top">
+			    <img src="./img/bbb_01.jpg">
+			    <img src="./img/bbb_02.jpg">
+			    <img src="./img/bbb_03.jpg">
+			    <img src="./img/bbb_04.jpg">
+
+		    </div>
+		    <div class="div2">
+		    	<div class="spgl"></div>
+		    	<a data-toggle="collapse" 
+                href="#collapseOne">
+		    	   视频管理  
+		    	</a>
+		    </div>
+		    <div id="collapseOne" class="panel-collapse collapse in">
+		    <div class="div3">
+		        <ul>
+		    	    <li>
+		    		    <a class="a" href="">查看所有视频</a>
+		    	    </li>
+		    	    <li>
+		    		    <a class="a">用户视频列表</a>
+		    	    </li>
+		    	 </ul>
+		    </div>
+		    </div>
+		    <!--文档管理-->
+		    <div class="div2">
+		    	<div class="spgl"></div>
+		    	<a data-toggle="collapse" data-parent="#accordion" 
+                href="#collapseTwo">
+		    	    文档管理
+		    	</a>
+		    </div>
+		    <div id="collapseTwo" class="panel-collapse collapse in">
+		    <div class="div3">
+		    	<li>
+		    		<a class="a">查看所有文档</a>
+		    	</li>
+		    	<li>
+		    		<a class="a">用户文档列表</a>
+		    	</li>
+		    </div>
+
+	    </div>
+	<!--类别管理-->
+		    <div class="div2">
+		    	<div class="spgl"></div>
+		    	<a data-toggle="collapse" data-parent="#accordion" 
+                href="#collapseThree">
+		    	    类别管理
+		    	</a>
+		    </div>
+		    <div id="collapseThree" class="panel-collapse collapse in">
+		    <div class="div3">
+		    	<li>
+		    		<a class="a">大类信息</a>
+		    	</li>
+		    	
+		    </div>
+		    </div>
+		    <!--用户管理-->
+		    <div class="div2">
+		    	<div class="yhgl"></div>
+		    	<a data-toggle="collapse" data-parent="#accordion" 
+                href="#collapseFour">
+		    	    用户管理
+		    	</a>
+		    </div>
+		    <div id="collapseFour" class="panel-collapse collapse in">
+		    <div class="div3">
+		    	<li>
+		    		<a class="a">学生管理</a>
+		    	</li>
+		    	<li>
+		    		<a class="a">老师管理</a>
+		    	</li>
+		    </div>
+		    </div>
+		    <!--评论管理-->
+		    <div class="div2">
+		    	<div class="yhgl"></div>
+		    	<a data-toggle="collapse" data-parent="#accordion" 
+                href="#collapseFive">
+		    	    评论管理
+		    	</a>
+		    </div>
+		    <div id="collapseFive" class="panel-collapse collapse in">
+		    <div class="div3">
+		    	<li>
+		    		<a class="a">评论删除</a>
+		    	</li>
+		    	<li>
+		    		<a class="a">用户禁言</a>
+		    	</li>
+		    </div>
+		    </div>
+		    <!--公告管理-->
+		    <div class="div2">
+		    	<div class="yhgl"></div>
+		    	<a data-toggle="collapse" data-parent="#accordion" 
+                href="#collapseSix">
+		    	    公告管理
+		    	</a>
+		    </div>
+		    <div id="collapseSix" class="panel-collapse collapse in">
+		    <div class="div3">
+		    	<li>
+		    		<a class="a">查看公告</a>
+		    	</li>
+		    	<li>
+		    		<a class="a">添加公告</a>
+		    	</li>
+		    </div>
+		    </div>
+		   
+		</div>
+	</div>
+	
+	<div class="clearfix visible-xs-block"></div>
+	
+	<div class="col-xs-6 col-sm-3">
+	    <div class="col">
+		<form  action="#" method="get">
+		    <font color="#777777"><strong>视频名称：</strong></font>
+            <input type="text" name="menuname" id="menuname" placeholder="" value="">&nbsp;&nbsp;
+            <button type="submit" >查询</button>&nbsp;&nbsp; 
+	        <button type="button"  id="addnew"><a href="videosAdd.html">添加视频</a></button>
+        </form>
+        <table class="table table-bordered table-hover definewidth m10">
+            <thead>
+                <tr>
+                    <th>视频名称</th>
+                    <th>分类</th>
+                    <th>上传者</th>
+                    <th>上传日期</th>
+                    <th>管理菜单</th>
+                </tr>
+            </thead>
+	            <tr>
+                    <td>复仇者联盟</td>
+                    <td>电影</td>
+                    <td><a href="studentdetail.html">小强</a></td>
+                    <td>2016.07.22</td>
+                    <td> <button type="submit">删除</button></a></td>
+                </tr>
+           
+       
+       </table>
+	   </div>
+	   </div>
+</div>
+</div>
+
+
+
+</body>
+</html>
